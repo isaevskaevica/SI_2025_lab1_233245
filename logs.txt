@@ -1,0 +1,15 @@
+*   ff1420d Merge branch '9-mark-all-tasks-in-a-category-as-completed'
+|\  
+| * a4a3e6f Implement markAllTasksInACategoryAsCompleted
+* |   da64554 Merge pull request #11 from isaevskaevica/2-find-all-completed-tasks
+|\ \  
+| * | 242a2d5 Implement findAllCompletedTasks
+| |/  
+* |   97f169b Merge pull request #10 from isaevskaevica/1-remove-a-task-by-name
+|\ \  
+| |/  
+|/|   
+| * 5975199 Implement removeATaskByName
+|/  
+* f043bad Add starter code
+* d72f34a Initial commit

@@ -1,0 +1,61 @@
+***Почетни поставувања
+
+4. mkdir SI_2025_lab1_233245 #креирање на директориум локално
+    cd SI_2025_lab1_233245 #префрлање во директориумот
+    git init #креирање гит локален репозиториум
+
+5. git remote add origin git@github.com:isaevskaevica/SI_2025_lab1_233245.git #поврзување на локалниот репозиториум со оддалечениот репозиториум
+
+6. echo "Evica Isaevska 233245" > README.md #додавање на датотеката README
+    git add README.md #додавање на датотеката на stage
+    git commit -m "Initial commit" #зачувување на промените
+
+7. git add SI2025Lab1Main.java #додавање на датотеката на stage
+    git commit -m "Add starter code" #зачувување на промените
+
+8. git push origin master #синхронизација на локалниот репозиториум со оддалечениот репозиториум
+
+*** Дел 2
+
+13. git fetch origin #синхронизација со оддалечниот репозиториум, креирање на tracker гранки за гранките од Github проектот
+
+14. git checkout 1-remove-a-task-by-name #префрлање на гранката за issue 1
+
+15. nano SI2025Lab1Main.java #имплементирање на функцијата
+
+16. git add SI2025Lab1Main.java #додавање на датотеката на stage
+      git commit -m "Implement removeATaskByName"  #зачувување на промените
+
+17. git push origin 1-remove-a-task-by-name #синхронизација на локалната гранка со гранката на оддалечниот репозиториум
+
+18. #креирање pull request
+
+19. #повторување на чекорите за останатите два issues
+     git checkout 2-find-all-completed-tasks
+     nano SI2025Lab1Main.java
+     git add SI2025Lab1Main.java
+     git commit -m "Implement findAllCompletedTasks"
+     git push origin 2-find-all-completed-tasks
+
+     git checkout  9-mark-all-tasks-in-a-category-as-completed
+     nano SI2025Lab1Main.java
+     git add SI2025Lab1Main.java
+     git commit -m "Implement markAllTasksInACategoryAsCompleted"
+     git push origin  9-mark-all-tasks-in-a-category-as-completed
+
+20. #одобрување и спојување на pull requests removeATaskByName и findAllCompletedTasks со стратегијата Fast-forwarding, не се случија конфликти
+
+22. #спојување на pull request markAllTasksInACategoryAsCompleted, без конфликти со стратегијата recursive
+      git checkout master #префрлање на гранката master
+      git pull origin master #синхронизација со оддалечниот репозиториум
+      git merge 9-mark-all-tasks-in-a-category-as-completed #спојување на гранката за issue 9 со гранката master
+
+23. git push origin master #синхронизација на локалната гранка со гранката на оддалечниот репозиториум
+
+25. git log --oneline --graph --all > logs.txt  #копирање на git логовите и додавање во датотеката logs.txt
+      git add 233245.txt logs.txt  #додавање на датотеките на stage
+      git commit -m "Final commit" #зачувување на промените
+
+26. git push origin master #синхронизација на гранката master со оддалечениот репозиториум
+
+  
