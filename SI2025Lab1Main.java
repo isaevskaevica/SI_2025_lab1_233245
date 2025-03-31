@@ -110,6 +110,7 @@ class TaskManager {
     // 9. Mark all tasks in a category as completed
     public void markCategoryCompleted(String category) {
         // TODO: Implement bulk completion logic
+        tasks.stream().filter(task -> task.getCategory().equalsIgnoreCase(category)).forEach(Task::complete);
     }
 }
 
